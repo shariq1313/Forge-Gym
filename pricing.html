@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — FORGE</title>
+<meta name="description" content="FORGE membership options — Drop-In, All-Access, and Elite Coaching. Coached strength training with no long-term contracts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+      Forge
+    </a>
+    <nav class="nav-links">
+      <a href="programs.html">Programs</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="transformations.html">Transformations</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="pricing.html" class="btn btn-red nav-cta">Join Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html">Programs</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="transformations.html">Transformations</a>
+  <a href="pricing.html" class="active">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header" data-scene="compact">
+    <div class="page-header-media">
+      <figure class="photo duo-top"><img src="https://picsum.photos/seed/forge-pricing-hdr/1800/900" alt="Empty gym floor lit for early morning training" loading="eager"></figure>
+    </div>
+    <div class="page-header-canvas-wrap"><canvas id="heroCanvas"></canvas></div>
+    <div class="container page-header-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Pricing</p>
+      <h1>Three ways to train here.</h1>
+      <p>No long-term contracts. Cancel or switch tiers any time with 30 days' notice.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="membership">
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="price-card reveal" style="--d:0">
+          <h3>Drop-In</h3>
+          <div class="price-amount">$18<span>/session</span></div>
+          <p class="price-desc">For travelers and the curious. No commitment.</p>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Full floor access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One class of choice</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Locker &amp; towel service</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Drop In</a>
+        </div>
+        <div class="price-card featured reveal" style="--d:1">
+          <span class="price-tag">Most lifters choose this</span>
+          <h3>All-Access</h3>
+          <div class="price-amount">$89<span>/month</span></div>
+          <p class="price-desc">Unlimited training, fully programmed.</p>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Unlimited classes &amp; open gym</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Program design included</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Monthly progress check-in</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>2 guest passes / month</li>
+          </ul>
+          <a href="contact.html" class="btn btn-red btn-block">Join All-Access</a>
+        </div>
+        <div class="price-card reveal" style="--d:2">
+          <h3>Elite Coaching</h3>
+          <div class="price-amount">$220<span>/month</span></div>
+          <p class="price-desc">1:1 attention on top of full access.</p>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in All-Access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Weekly 1:1 coaching</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Competition prep support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Direct coach messaging</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Go Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section panel" id="faq">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow reveal" style="--d:0">Questions</p>
+        <h2 class="reveal" style="--d:1">Before you <em>join.</em></h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" style="--d:0">
+          <summary>Is there a long-term contract?</summary>
+          <p>No. All-Access and Elite Coaching are month-to-month with 30 days' notice to cancel or downgrade. Drop-In has no commitment at all — pay per session.</p>
+        </details>
+        <details class="faq-item reveal" style="--d:1">
+          <summary>I've never lifted before — is that a problem?</summary>
+          <p>No. Strength Foundations is built for exactly that. Every new member starts with an assessment and a coach walks you through the big lifts before load gets added.</p>
+        </details>
+        <details class="faq-item reveal" style="--d:2">
+          <summary>Can I freeze my membership?</summary>
+          <p>Yes. All-Access and Elite members can freeze for up to 8 weeks per year for travel, injury, or anything else — just give us a heads up in advance.</p>
+        </details>
+        <details class="faq-item reveal" style="--d:3">
+          <summary>What's included in Elite Coaching that isn't in All-Access?</summary>
+          <p>Weekly 1:1 sessions with a coach of your choice, direct messaging for programming questions between sessions, and priority scheduling around competition dates.</p>
+        </details>
+        <details class="faq-item reveal" style="--d:4">
+          <summary>Do you offer student or military discounts?</summary>
+          <p>Yes — 15% off All-Access for students and active military with valid ID. Ask at the front desk or mention it when you book your first session.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="section cta-banner" id="cta">
+    <div class="container cta-inner">
+      <h2 class="reveal" style="--d:0">Your first session<br>is <em>on us.</em></h2>
+      <p class="reveal" style="--d:1">Try a class before you commit to a tier. No pressure, no sales script.</p>
+      <a href="contact.html" class="btn btn-red reveal" style="--d:2">Book Your Free Session</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+        Forge
+      </a>
+      <p>Strength and conditioning training, coached by people who still chase their own numbers.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="transformations.html">Transformations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="programs.html">Strength Foundations</a></li>
+        <li><a href="programs.html">Powerlifting Club</a></li>
+        <li><a href="programs.html">Metabolic Conditioning</a></li>
+        <li><a href="programs.html">Open Gym + Recovery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <address>412 Ironworks Ave<br>Industrial District<br>Mon–Fri 5am–10pm<br>Sat–Sun 7am–6pm</address>
+      <form class="newsletter" data-fake-submit>
+        <input type="email" placeholder="Email for PR tips" required>
+        <button type="submit" data-success="Subscribed ✓">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Forge Strength &amp; Conditioning. All rights reserved.</span>
+    <div class="footer-fine">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene.js"></script>
+</body>
+</html>

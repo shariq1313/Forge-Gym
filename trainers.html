@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trainers — FORGE</title>
+<meta name="description" content="Meet the coaching staff at FORGE — powerlifting, strength and conditioning, Olympic lifting, recovery, and metabolic conditioning specialists.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+      Forge
+    </a>
+    <nav class="nav-links">
+      <a href="programs.html">Programs</a>
+      <a href="trainers.html" class="active">Trainers</a>
+      <a href="transformations.html">Transformations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="pricing.html" class="btn btn-red nav-cta">Join Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html">Programs</a>
+  <a href="trainers.html" class="active">Trainers</a>
+  <a href="transformations.html">Transformations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header" data-scene="compact">
+    <div class="page-header-media">
+      <figure class="photo duo-top"><img src="https://picsum.photos/seed/forge-trainers-hdr/1800/900" alt="Coach reviewing a lifter's technique on the gym floor" loading="eager"></figure>
+    </div>
+    <div class="page-header-canvas-wrap"><canvas id="heroCanvas"></canvas></div>
+    <div class="container page-header-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Trainers</p>
+      <h1>On the floor, every session.</h1>
+      <p>Six coaches, capped classes, and a 1:8 ratio that never gets waived for a busy Tuesday.</p>
+    </div>
+  </section>
+
+  <!-- ============ FULL ROSTER ============ -->
+  <section class="section" id="trainers">
+    <div class="container">
+      <div class="trainers-grid detail">
+        <div class="trainer-card reveal-3d" style="--d:0">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-coach-1/600/750" alt="Portrait of Marcus Webb, Head Coach" loading="lazy"></figure>
+          <h3>Marcus Webb</h3>
+          <span class="trainer-role">Head Coach · Powerlifting</span>
+          <p>USAPL-certified with 12 years on the floor. Runs the competition prep track and handles meet-day coaching for anyone stepping on a platform.</p>
+        </div>
+        <div class="trainer-card reveal-3d" style="--d:1">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-coach-2/600/750" alt="Portrait of Elena Cruz, Strength and Conditioning coach" loading="lazy"></figure>
+          <h3>Elena Cruz</h3>
+          <span class="trainer-role">Strength &amp; Conditioning</span>
+          <p>Former collegiate track athlete who built the Foundations curriculum. Patient with first-timers, direct with everyone else.</p>
+        </div>
+        <div class="trainer-card reveal-3d" style="--d:2">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-coach-3/600/750" alt="Portrait of Jordan Pike, Olympic Lifting coach" loading="lazy"></figure>
+          <h3>Jordan Pike</h3>
+          <span class="trainer-role">Olympic Lifting</span>
+          <p>Snatch and clean-and-jerk specialist. Will happily spend an entire session on your first pull if that's what it takes.</p>
+        </div>
+        <div class="trainer-card reveal-3d" style="--d:3">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-coach-4/600/750" alt="Portrait of Sam Okafor, Recovery and Mobility coach" loading="lazy"></figure>
+          <h3>Sam Okafor</h3>
+          <span class="trainer-role">Recovery &amp; Mobility</span>
+          <p>Runs the Sunday mobility clinic and keeps the whole gym moving well enough to keep loading the bar.</p>
+        </div>
+        <div class="trainer-card reveal-3d" style="--d:4">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-coach-5/600/750" alt="Portrait of Priya Nair, Metabolic Conditioning coach" loading="lazy"></figure>
+          <h3>Priya Nair</h3>
+          <span class="trainer-role">Metabolic Conditioning</span>
+          <p>Designs the conditioning circuits and will absolutely outwork you in your own class.</p>
+        </div>
+        <div class="trainer-card reveal-3d" style="--d:5">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-coach-6/600/750" alt="Portrait of Dana Ruiz, Recovery and Nutrition coach" loading="lazy"></figure>
+          <h3>Dana Ruiz</h3>
+          <span class="trainer-role">Nutrition &amp; Recovery</span>
+          <p>Handles the practical side — sleep, protein, and pacing — for members balancing training with everything else.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="section cta-banner" id="cta">
+    <div class="container cta-inner">
+      <h2 class="reveal" style="--d:0">Train with a coach<br>who <em>actually watches.</em></h2>
+      <p class="reveal" style="--d:1">Every membership tier includes coached classes. Elite members get 1:1 time with the coach of their choice.</p>
+      <a href="pricing.html" class="btn btn-red reveal" style="--d:2">See Membership Options</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+        Forge
+      </a>
+      <p>Strength and conditioning training, coached by people who still chase their own numbers.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="transformations.html">Transformations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="programs.html">Strength Foundations</a></li>
+        <li><a href="programs.html">Powerlifting Club</a></li>
+        <li><a href="programs.html">Metabolic Conditioning</a></li>
+        <li><a href="programs.html">Open Gym + Recovery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <address>412 Ironworks Ave<br>Industrial District<br>Mon–Fri 5am–10pm<br>Sat–Sun 7am–6pm</address>
+      <form class="newsletter" data-fake-submit>
+        <input type="email" placeholder="Email for PR tips" required>
+        <button type="submit" data-success="Subscribed ✓">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Forge Strength &amp; Conditioning. All rights reserved.</span>
+    <div class="footer-fine">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene.js"></script>
+</body>
+</html>

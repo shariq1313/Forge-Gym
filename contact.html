@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — FORGE</title>
+<meta name="description" content="Book a free session at FORGE, ask a question, or stop by. Address, hours, and a direct line to the coaching staff.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+      Forge
+    </a>
+    <nav class="nav-links">
+      <a href="programs.html">Programs</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="transformations.html">Transformations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="pricing.html" class="btn btn-red nav-cta">Join Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html">Programs</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="transformations.html">Transformations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header" data-scene="compact">
+    <div class="page-header-media">
+      <figure class="photo duo-top"><img src="https://picsum.photos/seed/forge-contact-hdr/1800/900" alt="Front desk and entrance of the Forge gym" loading="eager"></figure>
+    </div>
+    <div class="page-header-canvas-wrap"><canvas id="heroCanvas"></canvas></div>
+    <div class="container page-header-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <h1>Come lift with us.</h1>
+      <p>Book a free session, ask about a program, or just come see the floor. No pressure tour, ever.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact-main">
+    <div class="container contact-grid">
+      <form class="contact-form" data-fake-submit>
+        <p class="eyebrow reveal" style="--d:0">Get In Touch</p>
+        <h2 class="reveal" style="--d:1; font-family:var(--f-display); text-transform:uppercase; font-size:clamp(1.8rem,3.6vw,2.4rem); margin-bottom:0.5rem;">Book a free session</h2>
+        <div class="form-row reveal" style="--d:2">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        <div class="form-row reveal" style="--d:3">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="field reveal" style="--d:4">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option>Strength Foundations</option>
+            <option>Powerlifting Club</option>
+            <option>Metabolic Conditioning</option>
+            <option>Open Gym + Recovery</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field reveal" style="--d:5">
+          <label for="message">Anything we should know?</label>
+          <textarea id="message" name="message" placeholder="Training background, injuries, goals, schedule — whatever's useful."></textarea>
+        </div>
+        <button type="submit" class="btn btn-red reveal" style="--d:6" data-success="Request Sent ✓">Send Request</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-block reveal" style="--d:1">
+          <h4>Address</h4>
+          <address>412 Ironworks Ave<br>Industrial District<br>Islamabad</address>
+        </div>
+        <div class="info-block reveal" style="--d:2">
+          <h4>Hours</h4>
+          <p>Mon–Fri: 5:00am – 10:00pm<br>Sat–Sun: 7:00am – 6:00pm</p>
+        </div>
+        <div class="info-block reveal" style="--d:3">
+          <h4>Direct</h4>
+          <p>hello@forgegym.example<br>+92 51 555 0142</p>
+        </div>
+        <div class="info-block reveal" style="--d:4">
+          <div class="map-frame"><div class="map-pin"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+        Forge
+      </a>
+      <p>Strength and conditioning training, coached by people who still chase their own numbers.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="transformations.html">Transformations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="programs.html">Strength Foundations</a></li>
+        <li><a href="programs.html">Powerlifting Club</a></li>
+        <li><a href="programs.html">Metabolic Conditioning</a></li>
+        <li><a href="programs.html">Open Gym + Recovery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <address>412 Ironworks Ave<br>Industrial District<br>Mon–Fri 5am–10pm<br>Sat–Sun 7am–6pm</address>
+      <form class="newsletter" data-fake-submit>
+        <input type="email" placeholder="Email for PR tips" required>
+        <button type="submit" data-success="Subscribed ✓">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Forge Strength &amp; Conditioning. All rights reserved.</span>
+    <div class="footer-fine">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene.js"></script>
+</body>
+</html>

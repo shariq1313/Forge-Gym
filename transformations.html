@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformations — FORGE</title>
+<meta name="description" content="Real member results at FORGE — strength gained, weight lost, and the floor where it happened.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+      Forge
+    </a>
+    <nav class="nav-links">
+      <a href="programs.html">Programs</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="transformations.html" class="active">Transformations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="pricing.html" class="btn btn-red nav-cta">Join Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html">Programs</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="transformations.html" class="active">Transformations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header" data-scene="compact">
+    <div class="page-header-media">
+      <figure class="photo duo-top"><img src="https://picsum.photos/seed/forge-trans-hdr/1800/900" alt="Member celebrating a personal record lift" loading="eager"></figure>
+    </div>
+    <div class="page-header-canvas-wrap"><canvas id="heroCanvas"></canvas></div>
+    <div class="container page-header-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Transformations</p>
+      <h1>Numbers don't lie.<br>Neither do the results.</h1>
+      <p>Every member here started somewhere. These are a few of the ones who kept showing up.</p>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section panel" id="stats">
+    <div class="container stats-grid">
+      <div class="stat-item reveal" style="--d:0">
+        <span class="stat-num" data-target="10240" data-suffix="+">0</span>
+        <span class="stat-label">Total lbs lost, gym-wide</span>
+      </div>
+      <div class="stat-item reveal" style="--d:1">
+        <span class="stat-num" data-target="640" data-suffix="+">0</span>
+        <span class="stat-label">Members who hit a new PR</span>
+      </div>
+      <div class="stat-item reveal" style="--d:2">
+        <span class="stat-num" data-target="92" data-suffix="%">0</span>
+        <span class="stat-label">Still training after 12 months</span>
+      </div>
+      <div class="stat-item reveal" style="--d:3">
+        <span class="stat-num" data-target="6" data-suffix="">0</span>
+        <span class="stat-label">Weeks between retests</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRANSFORMATION CARDS ============ -->
+  <section class="section" id="results">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow reveal" style="--d:0">Member Results</p>
+        <h2 class="reveal" style="--d:1">Real people. <em>Real numbers.</em></h2>
+      </div>
+      <div class="transform-grid">
+        <div class="transform-card reveal-3d" style="--d:0">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-trans-1/700/900" alt="Member Dana after a 6-month strength block" loading="lazy"></figure>
+          <span class="transform-tag">−30 LBS</span>
+          <div class="transform-meta"><strong>Dana R.</strong><span>6 months · All-Access</span></div>
+        </div>
+        <div class="transform-card reveal-3d" style="--d:1">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-trans-2/700/900" alt="Member Theo after a year of powerlifting training" loading="lazy"></figure>
+          <span class="transform-tag">+15 LBS</span>
+          <div class="transform-meta"><strong>Theo M.</strong><span>1 year · Elite Coaching</span></div>
+        </div>
+        <div class="transform-card reveal-3d" style="--d:2">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-trans-3/700/900" alt="Member Ayesha after a conditioning-focused block" loading="lazy"></figure>
+          <span class="transform-tag">−22 LBS</span>
+          <div class="transform-meta"><strong>Ayesha K.</strong><span>5 months · All-Access</span></div>
+        </div>
+        <div class="transform-card reveal-3d" style="--d:3">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-trans-4/700/900" alt="Member Luis after two years of coached programming" loading="lazy"></figure>
+          <span class="transform-tag">+40 LBS</span>
+          <div class="transform-meta"><strong>Luis P.</strong><span>2 years · Elite Coaching</span></div>
+        </div>
+        <div class="transform-card reveal-3d" style="--d:4">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-trans-5/700/900" alt="Member Noor after a year of Olympic lifting training" loading="lazy"></figure>
+          <span class="transform-tag">+18 LBS</span>
+          <div class="transform-meta"><strong>Noor S.</strong><span>11 months · All-Access</span></div>
+        </div>
+        <div class="transform-card reveal-3d" style="--d:5">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-trans-6/700/900" alt="Member Chris after regular drop-in training" loading="lazy"></figure>
+          <span class="transform-tag">−18 LBS</span>
+          <div class="transform-meta"><strong>Chris B.</strong><span>8 months · Drop-In regular</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE GRIND GALLERY ============ -->
+  <section class="section panel" id="the-grind">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow reveal" style="--d:0">The Floor</p>
+        <h2 class="reveal" style="--d:1">This is where <em>it happens.</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-tile tall reveal" style="--d:0"><figure class="photo"><img src="https://picsum.photos/seed/forge-grind-8/700/1000" alt="Lifter mid-deadlift under gym lighting" loading="lazy"></figure><span class="gallery-tile-label">Pulling heavy</span></div>
+        <div class="gallery-tile reveal" style="--d:1"><figure class="photo"><img src="https://picsum.photos/seed/forge-grind-9/700/700" alt="Close-up of a loaded barbell" loading="lazy"></figure><span class="gallery-tile-label">Loaded up</span></div>
+        <div class="gallery-tile short reveal" style="--d:2"><figure class="photo"><img src="https://picsum.photos/seed/forge-grind-10/700/450" alt="Chalk dust in the air near the squat rack" loading="lazy"></figure><span class="gallery-tile-label">Chalk in the air</span></div>
+        <div class="gallery-tile reveal" style="--d:3"><figure class="photo"><img src="https://picsum.photos/seed/forge-grind-11/700/700" alt="Member resting between sets" loading="lazy"></figure><span class="gallery-tile-label">Between sets</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials">
+    <div class="marquee">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="quote-card"><p>"Six months in and my deadlift is up 90lbs. The coaches actually watch you lift — nobody's just scrolling behind the desk."</p><div class="quote-who"><strong>Dana R.</strong><span>All-Access, 8mo</span></div></div>
+        <div class="quote-card"><p>"I'd never touched a barbell before Foundations. Now I'm signed up for my first meet in the spring."</p><div class="quote-who"><strong>Theo M.</strong><span>Elite Coaching, 1yr</span></div></div>
+        <div class="quote-card"><p>"The 6am conditioning class ruined my mornings in the best way possible. Genuinely the best hour of my day."</p><div class="quote-who"><strong>Ayesha K.</strong><span>All-Access, 5mo</span></div></div>
+        <div class="quote-card"><p>"Programming actually changes based on my retest numbers. First gym where I've felt like more than a subscription."</p><div class="quote-who"><strong>Luis P.</strong><span>Elite Coaching, 2yr</span></div></div>
+        <div class="quote-card"><p>"Small class sizes mean Jordan actually corrects my snatch instead of just yelling 'good job' from across the room."</p><div class="quote-who"><strong>Noor S.</strong><span>All-Access, 11mo</span></div></div>
+        <div class="quote-card"><p>"Drop in whenever I'm in town for work. Same standard every time, no matter which coach is running the floor."</p><div class="quote-who"><strong>Chris B.</strong><span>Drop-In regular</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="section cta-banner" id="cta">
+    <div class="container cta-inner">
+      <h2 class="reveal" style="--d:0">Your number<br>could be <em>next.</em></h2>
+      <p class="reveal" style="--d:1">Come in, lift for a session, and let's find out what your first six weeks could look like.</p>
+      <a href="contact.html" class="btn btn-red reveal" style="--d:2">Book Your Free Session</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+        Forge
+      </a>
+      <p>Strength and conditioning training, coached by people who still chase their own numbers.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="transformations.html">Transformations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="programs.html">Strength Foundations</a></li>
+        <li><a href="programs.html">Powerlifting Club</a></li>
+        <li><a href="programs.html">Metabolic Conditioning</a></li>
+        <li><a href="programs.html">Open Gym + Recovery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <address>412 Ironworks Ave<br>Industrial District<br>Mon–Fri 5am–10pm<br>Sat–Sun 7am–6pm</address>
+      <form class="newsletter" data-fake-submit>
+        <input type="email" placeholder="Email for PR tips" required>
+        <button type="submit" data-success="Subscribed ✓">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Forge Strength &amp; Conditioning. All rights reserved.</span>
+    <div class="footer-fine">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene.js"></script>
+</body>
+</html>

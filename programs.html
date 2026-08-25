@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs — FORGE</title>
+<meta name="description" content="Four coached training programs at FORGE: Strength Foundations, Powerlifting Club, Metabolic Conditioning, and Open Gym + Recovery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+      Forge
+    </a>
+    <nav class="nav-links">
+      <a href="programs.html" class="active">Programs</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="transformations.html">Transformations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="pricing.html" class="btn btn-red nav-cta">Join Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html" class="active">Programs</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="transformations.html">Transformations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header" data-scene="compact">
+    <div class="page-header-media">
+      <figure class="photo duo-top"><img src="https://picsum.photos/seed/forge-programs-hdr/1800/900" alt="Athlete training on the gym floor" loading="eager"></figure>
+    </div>
+    <div class="page-header-canvas-wrap"><canvas id="heroCanvas"></canvas></div>
+    <div class="container page-header-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Programs</p>
+      <h1>Pick your discipline.</h1>
+      <p>Four ways in. Every one of them coached, programmed, and tracked from your first session.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM DETAIL CARDS ============ -->
+  <section class="section" id="programs">
+    <div class="container">
+      <div class="programs-grid detail">
+        <div class="program-card reveal-3d" style="--d:0">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-prog-1/900/650" alt="Athlete performing a barbell back squat" loading="lazy"></figure>
+          <div class="program-card-body">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9"/><path d="M3 10v4M21 10v4"/></svg></div>
+            <h3>Strength Foundations</h3>
+            <p>Squat, bench, deadlift, press. This is where every member starts — coached technique on the big four lifts before load gets added, so the weight you chase later is built on a base that won't break down.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>3 sessions / week, 8-week block</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Technique video review included</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Baseline &amp; retest lift numbers</li>
+            </ul>
+            <a href="contact.html" class="card-link">Book an intro session <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="program-card reveal-3d" style="--d:1">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-prog-2/900/650" alt="Weight plates loaded on a barbell for powerlifting" loading="lazy"></figure>
+          <div class="program-card-body">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z"/><path d="M7 5H4a2 2 0 002 4M17 5h3a2 2 0 01-2 4"/></svg></div>
+            <h3>Powerlifting Club</h3>
+            <p>Peaking cycles built around a real competition date, technical coaching on your squat-bench-deadlift, and a coach in your corner on meet day handling attempts and warm-ups.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>12-week peaking block</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Meet-day coaching included</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Requires Strength Foundations or equivalent</li>
+            </ul>
+            <a href="contact.html" class="card-link">Book an intro session <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="program-card reveal-3d" style="--d:2">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-prog-3/900/650" alt="Athlete mid battle-rope conditioning circuit" loading="lazy"></figure>
+          <div class="program-card-body">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div>
+            <h3>Metabolic Conditioning</h3>
+            <p>Short, brutal, effective. Rotating 40-minute circuits mixing kettlebells, sleds, rowers, and bodyweight work, built to torch fat and build a bigger engine without wrecking your lifts.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>40-minute class, any day</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Scaled options every session</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>No lifting background required</li>
+            </ul>
+            <a href="contact.html" class="card-link">Book an intro session <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="program-card reveal-3d" style="--d:3">
+          <figure class="photo"><img src="https://picsum.photos/seed/forge-prog-4/900/650" alt="Lifter stretching during a mobility and recovery session" loading="lazy"></figure>
+          <div class="program-card-body">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 3-7 6-7 10a7 7 0 0014 0c0-4-3-7-7-10z"/><path d="M12 13v8"/></svg></div>
+            <h3>Open Gym + Recovery</h3>
+            <p>Unsupervised floor time for members who already know their programming, plus guided mobility tools and a Sunday cooldown clinic for anyone carrying tightness into the week.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Full floor access during open hours</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Mobility tools &amp; foam rollers on-site</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sunday guided cooldown clinic</li>
+            </ul>
+            <a href="contact.html" class="card-link">Book an intro session <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section panel" id="process">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" style="--d:0">How It Works</p>
+        <h2 class="reveal" style="--d:1">Four steps. <em>No guesswork.</em></h2>
+      </div>
+      <div class="process-track">
+        <div class="process-line" id="processLine">
+          <svg viewBox="0 0 100 2" preserveAspectRatio="none">
+            <path d="M0,1 L100,1"/>
+            <path class="fill" d="M0,1 L100,1"/>
+          </svg>
+        </div>
+        <div class="process-node reveal" style="--d:0">
+          <div class="process-num">01</div>
+          <h3>Assess</h3>
+          <p>Baseline lifts, a mobility screen, and a conversation about what "strong" means to you.</p>
+        </div>
+        <div class="process-node reveal" style="--d:1">
+          <div class="process-num">02</div>
+          <h3>Program</h3>
+          <p>A training block built around your numbers, not a generic spreadsheet off the shelf.</p>
+        </div>
+        <div class="process-node reveal" style="--d:2">
+          <div class="process-num">03</div>
+          <h3>Coach</h3>
+          <p>Every session, a coach on the floor watching bar path — not counting reps from the front desk.</p>
+        </div>
+        <div class="process-node reveal" style="--d:3">
+          <div class="process-num">04</div>
+          <h3>Progress</h3>
+          <p>Retest every six weeks. Load goes up, or the program changes. Simple as that.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="section cta-banner" id="cta">
+    <div class="container cta-inner">
+      <h2 class="reveal" style="--d:0">Not sure which<br>program <em>fits?</em></h2>
+      <p class="reveal" style="--d:1">Tell us where you're starting from and we'll point you at the right one — no charge for the conversation.</p>
+      <a href="contact.html" class="btn btn-red reveal" style="--d:2">Talk To A Coach</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="12" r="3.4"/><circle cx="18" cy="12" r="3.4"/><path d="M9.4 12h5.2"/></svg>
+        Forge
+      </a>
+      <p>Strength and conditioning training, coached by people who still chase their own numbers.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="transformations.html">Transformations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="programs.html">Strength Foundations</a></li>
+        <li><a href="programs.html">Powerlifting Club</a></li>
+        <li><a href="programs.html">Metabolic Conditioning</a></li>
+        <li><a href="programs.html">Open Gym + Recovery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <address>412 Ironworks Ave<br>Industrial District<br>Mon–Fri 5am–10pm<br>Sat–Sun 7am–6pm</address>
+      <form class="newsletter" data-fake-submit>
+        <input type="email" placeholder="Email for PR tips" required>
+        <button type="submit" data-success="Subscribed ✓">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Forge Strength &amp; Conditioning. All rights reserved.</span>
+    <div class="footer-fine">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene.js"></script>
+</body>
+</html>
