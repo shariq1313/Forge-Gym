@@ -12,8 +12,8 @@
   "use strict";
 
   var SOUND_SOURCES = {
-    click: 'assets/audio/click.wav',      // primary CTA buttons (Join Now, Book a Session, etc.)
-    nav:   'assets/audio/nav-click.wav'   // nav links / mobile menu
+    click: 'click.wav',      // primary CTA buttons (Join Now, Book a Session, etc.)
+    nav:   'nav-click.wav'   // nav links / mobile menu
   };
 
   var MIN_INTERVAL_MS = 90; // ignore retriggers faster than this, per sound — prevents rapid-click spam
